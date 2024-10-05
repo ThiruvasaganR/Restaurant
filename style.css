@@ -1,0 +1,532 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bckimg {
+  background-image: url('img/blure.jpg'); /* Use single quotes for consistency */
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  filter: blur(7px);
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+.navbar {
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add background for better text visibility */
+}
+
+.navbar:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
+  transition: 1s;
+}
+
+.nav {
+  color: rgb(238, 211, 175);
+  padding: 5px 10px;
+  margin-left: 10%;
+  text-transform: uppercase;
+  font-family: 'Diplomata SC', cursive; /* Ensure font-family is quoted */
+  font-size: x-large;
+}
+
+.logo img {
+  height: 100px;
+  width: 150px;
+  cursor: pointer; 
+  object-fit: cover;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.30);
+  border-radius: 45%;
+  margin-right: 10px;
+  transition: all 0.2s ease-in;
+
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+}
+
+.navbar ul li a {
+  color: rgb(214, 22, 38);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  transition: all 0.2s ease-in;
+}
+
+.navbar ul li a:hover {
+  color: rgb(214, 105, 72);
+  border-bottom: solid rgb(231, 62, 11) 1px;
+}
+
+/* ----slide body---- */
+.slide-body {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.slide-menu {
+  width: 95%;
+  margin-left: 5%;
+  height: 180px;
+  display: flex;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.20);
+  margin-bottom: 60px;
+}
+
+.slide-menu:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.40);
+  transition: 1s;
+}
+
+.head, .head-1, .head-2 {
+  font-family: 'Nosifer', cursive;
+  font-weight: 400; /* Adjusted for consistency */
+  margin-bottom: 0;
+  margin-left: 8%;
+}
+
+.head-1 {
+  margin-left: 10%;
+}
+
+.head-2 {
+  margin-top: 50px;
+}
+
+/* -----main-body----- */
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  margin-left: 6%;
+  margin-top: 10px;
+}
+
+/* -----main---- */
+.main, .main-2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main img, .main-2 img {
+  height: auto; /* Adjusted to maintain aspect ratio */
+  width: 90%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main, .main-2 p {
+  margin: 0;
+  padding: 0;
+  color: rgb(104, 102, 102);
+}
+
+.main h2, .main-2 h2 {
+  font-family: 'Rufina', serif;
+  padding-bottom: 20px;
+}
+
+/* ---card:hover---- */
+.card {
+  transition: 300ms;
+  color: rgb(0, 0, 0);
+  padding-left: 22px;
+}
+
+.card:hover {
+  transform: scale(0.95); /* Adjusted for smoother effect */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.30);
+  border-radius: 10px; 
+  color: rgb(104, 40, 40);
+  cursor: pointer; 
+}
+
+/* ---button styles--- */
+.button button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(236, 233, 233, 0.30);
+  cursor: pointer;
+  width: 10%;
+  height: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.button button:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.30);
+}
+
+/* ---card-1--- */
+.card-1 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.card-1-text {
+  padding: 0 90px; /* Combined padding */
+}
+
+.card-1-text h2 {
+  font-size: xx-large;
+  margin-left: auto; /* Center horizontally */
+}
+
+.card-1 img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* ---card-2--- */
+.card-2 {
+  display: flex;
+  align-items: center;
+}
+
+.card-2 img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-2-text {
+  padding: 0 80px; /* Combined padding */
+}
+
+.card-2-text h2 {
+  font-size: xx-large;
+  margin-left: auto; /* Center horizontally */
+}
+
+/* ---card-3--- */
+.card-3 {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.card-3-text {
+  padding: 0 70px; /* Combined padding */
+}
+
+.card-3-text h2 {
+  font-size: xx-large;
+  margin-left: auto; /* Center horizontally */
+}
+
+.card-3 img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* ---card-4--- */
+.card-4 {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px rgb(131, 124, 124);
+}
+
+.card-4 img {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+.card-4-text {
+  padding: 0 70px; /* Combined padding */
+}
+
+.card-4-text h2 {
+  font-size: xx-large;
+  margin-left: auto; /* Center horizontally */
+}
+
+/* ----app store---- */
+.app-store {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+
+.app img {
+  width: 50%;
+  height: auto; /* Adjusted to maintain aspect ratio */
+  margin-left: 20%;
+  cursor: pointer;
+}
+
+.arrow img {
+  width: 50%;
+  height: auto; /* Adjusted to maintain aspect ratio */
+  margin-left: 100%;
+  margin-top: 8%;
+}
+
+/* ----waste food---- */
+.waste-food {
+  display: flex;
+  background-color: rgb(241, 235, 235);
+  margin: 10px auto;
+  width: 80%;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.30);
+}
+
+.app-store h1 {
+  padding-top: 5%;
+  margin: 0 30%;
+  font-weight: bolder;
+  color: rgb(92, 91, 91);
+}
+
+.waste-food img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.food-h2 {
+  padding-left: 70px;
+  text-align: center;
+  margin-top: 8%;
+}
+
+/* ----footer---- */
+
+
+footer {
+  width: 90%;
+  background-color: rgb(34, 34, 34);
+  padding-bottom: 60px;
+  color: #fde7df;
+  margin-left: 5%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+}
+
+.footer-left {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.footer-right {
+  text-align: right;
+  margin-right: 20px;
+}
+
+footer .footer-text {
+  margin: 5px 0;
+  padding-left: 35%;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Apply styles for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  /* Your CSS rules for small screens go here */
+}
+
+/* Apply styles for screens between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Your CSS rules for medium screens go here */
+}
+
+/* Apply styles for screens larger than 1024px */
+@media only screen and (min-width: 1024px) {
+  /* Your CSS rules for large screens go here */
+}
+
+
+/* Styles for screens smaller than 768px (e.g., mobile devices) */
+@media only screen and (max-width: 768px) {
+
+  .navbar {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .navbar ul li {
+    margin-bottom: 10px;
+  }
+
+  .main, .main-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main img, .main-2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .slide-menu {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .waste-food {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .app-store {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app img, .arrow img {
+    width: 80%;
+    height: auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+/* Styles for screens between 768px and 1024px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .navbar {
+    padding: 30px;
+  }
+
+  .main, .main-2 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main img, .main-2 img {
+    width: 45%;
+    height: auto;
+  }
+
+  .slide-menu {
+    flex-direction: row;
+    height: 200px;
+  }
+
+  .waste-food {
+    height: 300px;
+  }
+
+  .app-store {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .app img, .arrow img {
+    width: 45%;
+    height: auto;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  .footer-content {
+    flex-direction: row;
+  }
+}
+
+/* Styles for screens larger than 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  
+  .navbar {
+    padding: 40px 50px;
+  }
+
+  .main img, .main-2 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .slide-menu {
+    height: 180px;
+  }
+
+  .waste-food {
+    height: 280px;
+  }
+
+  .app-store {
+    margin-top: 3%;
+  }
+
+  .app img, .arrow img {
+    width: 50%;
+    height: auto;
+  }
+
+  footer {
+    height: 20vh;
+   }
+
+
+}
+
+
+
